@@ -5,7 +5,7 @@ import {
 } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
-interface IRocketComponent {
+export interface IRocketComponent {
   stackPrefix: string;
   lambdaCode?: lambda.Code;
   createDynamoDbTable?: boolean;
