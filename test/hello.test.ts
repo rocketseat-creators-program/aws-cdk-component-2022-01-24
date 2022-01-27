@@ -8,9 +8,9 @@ test('Create full component', () => {
   const stack = new Stack(app, 'stack-test');
 
   // When
-  new RocketComponent(stack, 'RocketeatComponent', {
+  new RocketComponent(stack, 'RocketseatComponent', {
     stackPrefix: 'ExpertsClub',
-    lambdaCode: lambda.AssetCode.fromAsset('lambda'),
+    lambdaCode: lambda.Code.fromAsset('lambda'),
     createDynamoDbTable: true,
   });
 
